@@ -1,0 +1,6 @@
+db.obligation_tracker.find( { RESPONSIBILITY: { $exists: true}}).count()
+
+db.obligation_tracker.distinct('RESPONSIBILITY')
+
+
+db.obligation_tracker.find( { DESCRIPTION: { $exists: true}}).count()
